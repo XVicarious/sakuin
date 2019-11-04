@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "sakuin"
+version = "0.0.1"
+description = "RESTful API for japanese media stuff"
+license =  "AGPL-3.0-or-later"
+authors = [
+  "Brian Maurer <bmaurer@xvicario.us>"
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+Flask = "^1.1.1"
+Flask-SQLAlchemy = "^2.4"
+Flask-RESTful = "^0.3.7"
+
+[tool.poetry.dev-dependencies]
+nitpick = "*"
+wemake-python-styleguide = "*"
+ipdb = "*"
+ipython = "*"
+pylint = "*"
+mypy = "*"
+
+[tool.nitpick]
+style = [
+  "https://raw.githubusercontent.com/wemake-services/wemake-python-styleguide/master/styles/nitpick-style-wemake.toml",
+]
+
+[build-system]
+build-backend = "poetry.masonry.api"
